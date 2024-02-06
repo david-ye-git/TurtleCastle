@@ -1,36 +1,34 @@
-import java.util.Arrays;
-
 public class Main {
     private static final double CIRCLE_RADIUS = 360;
     public static void main (String[] args) {
-//        Turtle turtle = new Turtle();
-        Turtle turtle = new Turtle(Medieval.getMedievalWorld());
+        Turtle turtle = new Turtle();
+        Turtle turtleKnight = new Turtle(Medieval.getMedievalWorld());
 
         // Problem 2
-        Medieval.drawTown(turtle);
+        Medieval.drawTown(turtleKnight);
 
         
         // Problem 3
-//        polyspiral(turtle, 3, 20, 5);
-//        polyspiral(turtle, 5, 10, 4);
-//        polyspiral(turtle, 8, 5, 3);
+        polyspiral(turtle, 3, 20, 5);
+        polyspiral(turtle, 5, 10, 4);
+        polyspiral(turtle, 8, 5, 3);
         
         // Problem 4
-//        polywheel(turtle, 3, 70);
-//        polywheel(turtle, 4, 50);
-//        polywheel(turtle, 5, 40);
-//        polywheel(turtle, 6, 30);
-//        polywheel(turtle, 12, 15);
+        polywheel(turtle, 3, 70);
+        polywheel(turtle, 4, 50);
+        polywheel(turtle, 5, 40);
+        polywheel(turtle, 6, 30);
+        polywheel(turtle, 12, 15);
         
         // Problem 5
-//        multistar(turtle, 7, 100);
-//        multistar(turtle, 10, 70);
-//        multistar(turtle, 25, 120);
+        multistar(turtle, 7, 100);
+        multistar(turtle, 10, 70);
+        multistar(turtle, 25, 120);
 
         // Problem 6
-//        pyramid(turtle, 200, 5);
-//        pyramid(turtle, 200, 10);
-//        pyramid(turtle, 300, 10);
+        pyramid(turtle, 200, 5);
+        pyramid(turtle, 200, 10);
+        pyramid(turtle, 300, 10);
     }
 
     private static void polyspiral (Turtle turtle, int n, double base, int rounds) {
